@@ -43,18 +43,6 @@ namespace ZelenskiyGame
         }
         private void CheckInputForMove(KeyEventArgs e, Hero hero)
         {
-            /*bool isThere = false;
-            var a = e.Code;*/
-            /*if (!MoveDirection.ContainsKey(e))
-                return;*/
-            /*switch (e)
-            {
-                case e: isThere = true; 
-                    break;
-            }*/
-            /*if (!MoveDirection.ContainsKey(key))
-                return;*/
-
             if (e.Code == Keyboard.Key.W)
                 hero.body.direction = Direction.up;
             if (e.Code == Keyboard.Key.S)
@@ -64,18 +52,8 @@ namespace ZelenskiyGame
             if (e.Code == Keyboard.Key.D)
                 hero.body.direction = Direction.right;
 
-            //hero.body.direction = MoveDirection[e];
 
             hero.Move();
         }
-        /*public bool ContainsKey(Key key)
-        {
-            return FindEntry(key) >= 0;
-        }
-
-        private int FindEntry(Key key)
-        {
-            throw new NotImplementedException();
-        }*/
     }
 }
